@@ -32,7 +32,7 @@
       certificate_name: ansible
       certificate_data: "{{ lookup('file', 'ansible.crt') }}"
       validate_certs: no
-      state: present push
+      state: present
 
   - name: Set the user role and priv
     aci_rest:
